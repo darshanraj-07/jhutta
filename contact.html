@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Harake Khutta Ma Hamro Jutta</title>
+    <link rel="stylesheet" href="style3.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="title">Contact Us</h1>
+            <p class="tagline">We’re here to help! Reach out for any queries, feedback, or assistance.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-us">
+            <div class="container">
+                <h2>How to Reach Us</h2>
+                <p>If you have any questions or need assistance, feel free to contact us using the form below or through our direct contact details.</p>
+
+                <!-- Contact Form -->
+                <form action="submit_contact_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <!-- Contact Information -->
+                <h3>Other Ways to Contact Us:</h3>
+                <address>
+                    <strong>Harake Khutta Ma Hamro Jutta</strong><br>
+                    Main Street, Kathmandu, Nepal<br>
+                    <strong>Phone:</strong> +977-1234567890<br>
+                    <strong>Email:</strong> support@harakekhutta.com<br>
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Harake Khutta Ma Hamro Jutta. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
