@@ -1,0 +1,249 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1.title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+}
+
+/* About Company Section */
+.about-company {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-company h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-company p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* CEO Section */
+.ceo-details {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.ceo-details .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ceo-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Floating Effect for CEO Section */
+.ceo-bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+    animation: floatAnimation 3s ease-out infinite;
+}
+
+.ceo-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ceo-image-container {
+    position: relative;
+    animation: imageFloat 3s ease-out infinite;
+}
+
+.ceo-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ceo-text {
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.ceo-text strong {
+    font-weight: bold;
+}
+
+/* Floating Animation Keyframes */
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes imageFloat {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Call-to-Action Section */
+.cta {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+/* User Authentication Section */
+.user-auth {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.user-auth h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.auth-buttons {
+    margin-top: 30px;
+}
+
+.auth-button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #2980b9;
+}
+
+.music-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.music-button:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
